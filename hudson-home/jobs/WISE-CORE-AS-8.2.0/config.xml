@@ -12,7 +12,7 @@ WORKSPACE=`pwd`
 JAVA_HOME=@java.home.sun.jdk8@
 SCRIPTS_DIR=@hudson.home@/../scripts
 #set value so existing functions can be used
-STACK_DIR=$WORKSPACE/integration-testsuite
+STACK_DIR=$WORKSPACE
 TEST_OPTS=
 JBOSS_TARGET=wildfly820
 
