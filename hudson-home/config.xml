@@ -51,52 +51,21 @@
   <quietPeriod>5</quietPeriod>
   <views>
 
-    <!-- AS Builds -->
+    <!-- WISE-CORE Builds -->
     <view>
       <owner reference="../../.."/>
       <jobNames class="tree-set">
         <no-comparator/>
-        <string>AS-ALL</string>
-        <string>AS-LIGHT</string>
-        <string>AS-8.2.1-SECMGR</string>
-        <string>AS-9.0.0-SECMGR</string>
-        <string>AS-9.0.1-SECMGR</string>
-        <string>AS-10.0.0</string>
-        <string>AS-10.0.0-SECMGR</string>
+        <string>WISE-ALL</string>
+        <string>WISE-CORE-AS-8.0.0</string>
+        <string>WISE-CORE-AS-8.1.0</string>
+        <string>WISE-CORE-AS-8.2.0</string>
+        <string>WISE-CORE-AS-9.0.0</string>
       </jobNames>
-      <name>AS Builds</name>
+      <name>WISE-CORE Tests</name>
       <description>
         <![CDATA[
-  Run AS builds.
-]]>
-      </description>
-    </view>
-
-    <!-- CXF Tests-->
-    <view>
-      <owner reference="../../.."/>
-      <jobNames class="tree-set">
-        <no-comparator/>
-        <string>CXF-ALL</string>
-        <string>CXF-CORE-AS-8.2.1</string>
-        <string>CXF-CORE-AS-9.0.0</string>
-        <string>CXF-CORE-AS-9.0.1</string>
-        <string>CXF-CORE-AS-10.0.0</string>
-        <string>CXF-CORE-AS-8.2.1-SECMGR</string>
-        <string>CXF-CORE-AS-9.0.0-SECMGR</string>
-        <string>CXF-CORE-AS-9.0.1-SECMGR</string>
-        <string>CXF-CORE-AS-10.0.0-SECMGR</string>
-        <string>CXF-CORE-AS-8.2.1-IPV6</string>
-        <string>CXF-CORE-AS-9.0.0-IPV6</string>
-        <string>CXF-CORE-AS-9.0.1-IPV6</string>
-        <string>CXF-CORE-AS-10.0.0-IPV6</string>
-      </jobNames>
-      <name>CXF Tests</name>
-      <description>
-        <![CDATA[
-  Run the CXF testsuite.
-  <p/>
-  Make sure you have sucessfuly build the <a href="/hudson/view/Target%20Container">Target Container</a>
+  Run WISE-CORE tests.
 ]]>
       </description>
     </view>

@@ -77,5 +77,29 @@ coreTestWithSecMgr() {
 }
 
 
+#######################
+# wise-core functions #
+#######################
+wiseRunTestsViaMaven() {
+  cd $STACK_DIR
+  echo "TEST_OPTS: $TEST_OPTS"
+  mvn $ENVIRONMENT -Phudson,$JBOSS_TARGET $TEST_OPTS integration-test 2>&1 | tee $WORKSPACE/tests.log
+}
+
+wiseCleanWorkspace() {
+  cd $STACK_DIR
+  mvn clean
+  cd $WORKSPACE
+  mvn clean
+}
+
+wiseCoreTest() {
+   setupEnv
+   ensureJavaExists
+   wiseCleanWorkspace
+   wiseRunTestsViaMaven
+   copyTestLogs
+   detectFailures
+ }
 
 

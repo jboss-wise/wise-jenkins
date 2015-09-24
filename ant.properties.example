@@ -40,6 +40,15 @@ hudson.jboss1000.rev=master
 hudson.mail.recipients=
 hudson.smtp.host=localhost
 
+# WISE-CORE settings
+hudson.wise.core.url= https://github.com/jboss-wise/wise-core
+hudson.wise.core.rev=master
+
+hudson.jboss800.build=wildfly-8.0.0.Final
+hudson.jboss810.build=wildfly-8.1.0.Final
+hudson.jboss820.build=wildfly-8.2.0.Final
+
+
 # Hudson setup
 apache-tomcat=5.5.31
 git-plugin=2.4.0
