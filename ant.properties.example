@@ -1,0 +1,48 @@
+#
+# A sample ant properties file
+#
+
+# JBoss remote repository
+jboss.repository=http://repository.jboss.org
+
+# The JBoss settings
+jboss.bind.address=localhost
+
+# JDK settings
+java.home.sun.jdk7=/usr/java/jdk1.7
+java.home.sun.jdk8=/usr/java/jdk1.8
+
+# Hudson QA Environment
+hudson.root=/data/workspace
+hudson.host=jbossws-qa.jboss.org
+hudson.admin.port=8150
+hudson.http.port=8180
+
+hudson.cxf.url=https://github.com/jbossws/jbossws-cxf
+hudson.cxf.rev=master
+
+hudson.jboss821.url=https://github.com/wildfly/wildfly
+hudson.jboss821.build=wildfly-8.2.1.Final
+hudson.jboss821.rev=8.2.1.Final
+
+hudson.jboss900.url=https://github.com/wildfly/wildfly
+hudson.jboss900.build=wildfly-9.0.0.Final
+hudson.jboss900.rev=9.0.0.Final
+
+hudson.jboss901.url=https://github.com/wildfly/wildfly
+hudson.jboss901.build=wildfly-9.0.1.Final
+hudson.jboss901.rev=9.0.1.Final
+
+hudson.jboss1000.url=https://github.com/wildfly/wildfly
+hudson.jboss1000.build=wildfly-10.0.0.CR2-SNAPSHOT
+hudson.jboss1000.rev=master
+
+hudson.mail.recipients=
+hudson.smtp.host=localhost
+
+# Hudson setup
+apache-tomcat=5.5.31
+git-plugin=2.4.0
+git-client-plugin=1.19.0
+scm-api-plugin=0.2
+jenkins-ver=1.630

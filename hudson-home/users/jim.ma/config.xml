@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<user>
+  <fullName>jim.ma</fullName>
+  <description>Jim Ma</description>
+  <properties>
+    <hudson.tasks.Mailer_-UserProperty>
+      <emailAddress>ema@redhat.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+  </properties>
+</user>

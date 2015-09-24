@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <name>JBoss Wise - Jenkins Integration</name>
+  <groupId>org.jboss.wise</groupId>
+  <artifactId>wise-jenkins</artifactId>
+  <packaging>pom</packaging>
+  <description>JBoss Wise Jenkins Integration</description>
+  <version>5.1.0-SNAPSHOT</version>
+
+  <!-- Parent -->
+  <parent>
+    <groupId>org.jboss.ws</groupId>
+    <artifactId>jbossws-parent</artifactId>
+    <version>1.1.0.GA</version>
+  </parent>
+
+  <scm>
+    <connection>scm:git:https://github.com/jboss-wise/wise-jenkins.git</connection>
+    <developerConnection>scm:git:https://github.com/jboss-wise/wise-jenkins.git</developerConnection>
+    <url>https://github.com/jboss-wise/wise-jenkins</url>
+  </scm>
+
+</project>

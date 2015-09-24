@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <builders class="vector"/>
+  <publishers class="vector">
+    <hudson.tasks.BuildTrigger>
+      <childProjects>AS-LIGHT, CXF-ALL</childProjects>
+      <threshold>
+        <name>UNSTABLE</name>
+        <ordinal>1</ordinal>
+        <color>YELLOW</color>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers class="vector"/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <enableRemoteTrigger>false</enableRemoteTrigger>
+  <triggers class="vector">
+    <hudson.triggers.TimerTrigger>
+      <spec>0 19 * * 1-5</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <logRotator>
+    <daysToKeep>14</daysToKeep>
+    <numToKeep>-1</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <description>Working days matrix executes only selected hudson jobs.</description>
+  <actions class="vector"/>
+</project>

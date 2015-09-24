@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>hudson.model.Item.Create:hudson</permission>
+    <permission>hudson.model.Item.Delete:hudson</permission>
+    <permission>hudson.model.Computer.Delete:hudson</permission>
+    <permission>hudson.model.View.Configure:hudson</permission>
+    <permission>hudson.model.Hudson.Administer:hudson</permission>
+    <permission>hudson.model.View.Create:hudson</permission>
+    <permission>hudson.model.Item.Configure:hudson</permission>
+    <permission>hudson.model.Item.Workspace:hudson</permission>
+    <permission>hudson.model.View.Delete:hudson</permission>
+    <permission>hudson.model.Run.Delete:hudson</permission>
+    <permission>hudson.scm.SCM.Tag:hudson</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:hudson</permission>
+    <permission>hudson.model.Run.Update:hudson</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:hudson</permission>
+    <permission>hudson.model.Item.Build:hudson</permission>
+    <permission>hudson.model.Computer.Configure:hudson</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>false</disableSignup>
+  </securityRealm>
+  <systemMessage>
+    <![CDATA[
+  <h2>JBossWS-@version.id@ QA Environment</h2>
+
+  <table>
+  <tr><th align=left>JBossWS CXF:</th><td>-r@hudson.cxf.rev@ @hudson.cxf.url@</td></tr>
+  <tr><td colspan=2></td></tr>
+  <tr><th align=left>@hudson.jboss821.build@</th><td>-r@hudson.jboss821.rev@ @hudson.jboss821.url@</td></tr>
+  <tr><th align=left>@hudson.jboss900.build@</th><td>-r@hudson.jboss900.rev@ @hudson.jboss900.url@</td></tr>
+  <tr><th align=left>@hudson.jboss901.build@</th><td>-r@hudson.jboss901.rev@ @hudson.jboss901.url@</td></tr>
+  <tr><th align=left>@hudson.jboss1000.build@</th><td>-r@hudson.jboss1000.rev@ @hudson.jboss1000.url@</td></tr>
+  <tr><td colspan=2></td></tr>
+  </table>
+]]>
+  </systemMessage>
+  <!-- Display systemMessage html properly  -->
+  <markupFormatter class="hudson.markup.RawHtmlMarkupFormatter" plugin="antisamy-markup-formatter@1.1">
+    <disableSyntaxHighlighting>false</disableSyntaxHighlighting>
+  </markupFormatter>
+
+  <jdks/>
+  <slaves/>
+  <quietPeriod>5</quietPeriod>
+  <views>
+
+    <!-- AS Builds -->
+    <view>
+      <owner reference="../../.."/>
+      <jobNames class="tree-set">
+        <no-comparator/>
+        <string>AS-ALL</string>
+        <string>AS-LIGHT</string>
+        <string>AS-8.2.1-SECMGR</string>
+        <string>AS-9.0.0-SECMGR</string>
+        <string>AS-9.0.1-SECMGR</string>
+        <string>AS-10.0.0</string>
+        <string>AS-10.0.0-SECMGR</string>
+      </jobNames>
+      <name>AS Builds</name>
+      <description>
+        <![CDATA[
+  Run AS builds.
+]]>
+      </description>
+    </view>
+
+    <!-- CXF Tests-->
+    <view>
+      <owner reference="../../.."/>
+      <jobNames class="tree-set">
+        <no-comparator/>
+        <string>CXF-ALL</string>
+        <string>CXF-CORE-AS-8.2.1</string>
+        <string>CXF-CORE-AS-9.0.0</string>
+        <string>CXF-CORE-AS-9.0.1</string>
+        <string>CXF-CORE-AS-10.0.0</string>
+        <string>CXF-CORE-AS-8.2.1-SECMGR</string>
+        <string>CXF-CORE-AS-9.0.0-SECMGR</string>
+        <string>CXF-CORE-AS-9.0.1-SECMGR</string>
+        <string>CXF-CORE-AS-10.0.0-SECMGR</string>
+        <string>CXF-CORE-AS-8.2.1-IPV6</string>
+        <string>CXF-CORE-AS-9.0.0-IPV6</string>
+        <string>CXF-CORE-AS-9.0.1-IPV6</string>
+        <string>CXF-CORE-AS-10.0.0-IPV6</string>
+      </jobNames>
+      <name>CXF Tests</name>
+      <description>
+        <![CDATA[
+  Run the CXF testsuite.
+  <p/>
+  Make sure you have sucessfuly build the <a href="/hudson/view/Target%20Container">Target Container</a>
+]]>
+      </description>
+    </view>
+
+  </views>
+</hudson>
