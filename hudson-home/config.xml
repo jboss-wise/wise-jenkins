@@ -28,7 +28,7 @@
   </securityRealm>
   <systemMessage>
     <![CDATA[
-  <h2>JBossWS-@version.id@ QA Environment</h2>
+  <h2>Wise Core - @version.id@ QA Environment</h2>
 
   <table>
   <tr><th align=left>Wise Core:</th><td>-r@hudson.wise.core.rev@ @hudson.wise.core.url@</td></tr>
