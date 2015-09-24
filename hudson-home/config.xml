@@ -31,12 +31,7 @@
   <h2>JBossWS-@version.id@ QA Environment</h2>
 
   <table>
-  <tr><th align=left>JBossWS CXF:</th><td>-r@hudson.cxf.rev@ @hudson.cxf.url@</td></tr>
-  <tr><td colspan=2></td></tr>
-  <tr><th align=left>@hudson.jboss821.build@</th><td>-r@hudson.jboss821.rev@ @hudson.jboss821.url@</td></tr>
-  <tr><th align=left>@hudson.jboss900.build@</th><td>-r@hudson.jboss900.rev@ @hudson.jboss900.url@</td></tr>
-  <tr><th align=left>@hudson.jboss901.build@</th><td>-r@hudson.jboss901.rev@ @hudson.jboss901.url@</td></tr>
-  <tr><th align=left>@hudson.jboss1000.build@</th><td>-r@hudson.jboss1000.rev@ @hudson.jboss1000.url@</td></tr>
+  <tr><th align=left>Wise Core:</th><td>-r@hudson.wise.core.rev@ @hudson.wise.core.url@</td></tr>
   <tr><td colspan=2></td></tr>
   </table>
 ]]>
