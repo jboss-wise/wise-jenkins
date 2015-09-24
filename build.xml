@@ -34,9 +34,9 @@
 
   <target name="init-jenkins" depends="init">
 
-    <property name="hudson.tomcat" value="${hudson.root}/jbossws-hudson-${version.id}/apache-tomcat"/>
-    <property name="hudson.home" value="${hudson.root}/jbossws-hudson-${version.id}/hudson-home"/>
-    <property name="hudson.scripts" value="${hudson.root}/jbossws-hudson-${version.id}/scripts"/>
+    <property name="hudson.tomcat" value="${hudson.root}/wise-jenkins-${version.id}/apache-tomcat"/>
+    <property name="hudson.home" value="${hudson.root}/wise-jenkins-${version.id}/hudson-home"/>
+    <property name="hudson.scripts" value="${hudson.root}/wise-jenkins-${version.id}/scripts"/>
     <echo/>
     <echo message="hudson.root = ${hudson.root}"/>
     <echo message="hudson.home = ${hudson.home}"/>
