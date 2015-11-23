@@ -35,4 +35,4 @@ apache-tomcat=5.5.31
 git-plugin=2.4.0
 git-client-plugin=1.19.0
 scm-api-plugin=0.2
-jenkins-ver=1.630
+jenkins-ver=1.638
